@@ -103895,17 +103895,17 @@ var LoginView = function (_a) {
             react_1.default.createElement("div", { className: classes.paper },
                 react_1.default.createElement(Avatar_1.default, { className: classes.avatar },
                     react_1.default.createElement(LockOutlined_1.default, null)),
-                react_1.default.createElement(Typography_1.default, { component: "h1", variant: "h5" }, "Sign in"),
+                react_1.default.createElement(Typography_1.default, { component: "h1", variant: "h5" }, "\u0412\u0445\u043E\u0434"),
                 react_1.default.createElement("form", { className: classes.form, noValidate: true, onSubmit: handleSubmit },
-                    react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, id: "email", label: "Email Address", name: "email", autoComplete: "email", autoFocus: true, value: email, onChange: function (event) { return setEmail(event.target.value); } }),
-                    react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, name: "password", label: "Password", type: "password", id: "password", autoComplete: "current-password", value: password, onChange: function (event) { return setPassword(event.target.value); } }),
-                    react_1.default.createElement(FormControlLabel_1.default, { control: react_1.default.createElement(Checkbox_1.default, { value: "remember", color: "primary" }), label: "Remember me" }),
-                    react_1.default.createElement(Button_1.default, { type: "submit", fullWidth: true, variant: "contained", color: "primary", className: classes.submit }, "Sign In"),
+                    react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, id: "email", label: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 email", name: "email", autoComplete: "email", autoFocus: true, value: email, onChange: function (event) { return setEmail(event.target.value); } }),
+                    react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, name: "password", label: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043F\u0430\u0440\u043E\u043B\u044C", type: "password", id: "password", autoComplete: "current-password", value: password, onChange: function (event) { return setPassword(event.target.value); } }),
+                    react_1.default.createElement(FormControlLabel_1.default, { control: react_1.default.createElement(Checkbox_1.default, { value: "remember", color: "secondary" }), label: "\u0417\u0430\u043F\u043E\u043C\u043D\u0438\u0442\u044C \u043C\u0435\u043D\u044F" }),
+                    react_1.default.createElement(Button_1.default, { type: "submit", fullWidth: true, variant: "outlined", color: "secondary", className: classes.submit }, "\u0412\u043E\u0439\u0442\u0438"),
                     react_1.default.createElement(Grid_1.default, { container: true },
                         react_1.default.createElement(Grid_1.default, { item: true, xs: true },
-                            react_1.default.createElement(Link_1.default, { href: "#", variant: "body2" }, "Forgot password?")),
+                            react_1.default.createElement(Link_1.default, { href: "#", variant: "body2" }, "\u0417\u0430\u0431\u044B\u043B\u0438 \u043F\u0430\u0440\u043E\u043B\u044C?")),
                         react_1.default.createElement(Grid_1.default, { item: true },
-                            react_1.default.createElement(react_router_dom_1.NavLink, { to: "/register" }, "Don't have an account? Sign Up"))))),
+                            react_1.default.createElement(react_router_dom_1.NavLink, { to: "/register" }, "Ещё нет аккаунта? Зарегистрироваться"))))),
             react_1.default.createElement(Box_1.default, { mt: 8 },
                 react_1.default.createElement(Copyright_1.default, null)))
         : react_1.default.createElement(react_router_dom_1.Redirect, { to: "/" }));
@@ -103950,15 +103950,15 @@ function RegisterView() {
         react_1.default.createElement("div", { className: classes.paper },
             react_1.default.createElement(Avatar_1.default, { className: classes.avatar },
                 react_1.default.createElement(LockOutlined_1.default, null)),
-            react_1.default.createElement(Typography_1.default, { component: "h1", variant: "h5" }, "Register"),
+            react_1.default.createElement(Typography_1.default, { component: "h1", variant: "h5" }, "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044F"),
             react_1.default.createElement("form", { className: classes.form, noValidate: true },
-                react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, id: "email", label: "Email Address", name: "email", autoComplete: "email", autoFocus: true }),
-                react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, name: "password", label: "Password", type: "password", id: "password", autoComplete: "current-password" }),
-                react_1.default.createElement(FormControlLabel_1.default, { control: react_1.default.createElement(Checkbox_1.default, { value: "remember", color: "primary" }), label: "Remember me" }),
-                react_1.default.createElement(Button_1.default, { type: "submit", fullWidth: true, variant: "contained", color: "primary", className: classes.submit }, "Register"),
+                react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, id: "email", label: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 email", name: "email", autoComplete: "email", autoFocus: true }),
+                react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, name: "password", label: "\u041F\u0440\u0438\u0434\u0443\u043C\u0430\u0439\u0442\u0435 \u043F\u0430\u0440\u043E\u043B\u044C", type: "password", id: "password", autoComplete: "current-password" }),
+                react_1.default.createElement(FormControlLabel_1.default, { control: react_1.default.createElement(Checkbox_1.default, { value: "remember", color: "secondary" }), label: "\u0417\u0430\u043F\u043E\u043C\u043D\u0438\u0442\u044C \u043C\u0435\u043D\u044F" }),
+                react_1.default.createElement(Button_1.default, { type: "submit", fullWidth: true, variant: "outlined", color: "secondary", className: classes.submit }, "\u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F"),
                 react_1.default.createElement(Grid_1.default, { container: true },
                     react_1.default.createElement(Grid_1.default, { item: true },
-                        react_1.default.createElement(react_router_dom_1.NavLink, { to: "/login" }, "Already have an account? Sign In"))))),
+                        react_1.default.createElement(react_router_dom_1.NavLink, { to: "/login" }, "Уже есть аккаунт? Войдите"))))),
         react_1.default.createElement(Box_1.default, { mt: 8 },
             react_1.default.createElement(Copyright_1.default, null))));
 }
@@ -104008,6 +104008,12 @@ exports.default = Copyright;
 Object.defineProperty(exports, "__esModule", { value: true });
 var styles_1 = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 var useStyles = styles_1.makeStyles(function (theme) { return ({
+    image: {
+        backgroundImage: 'url(https://source.unsplash.com/random)',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+    },
     paper: {
         marginTop: theme.spacing(8),
         display: 'flex',
@@ -104016,7 +104022,7 @@ var useStyles = styles_1.makeStyles(function (theme) { return ({
     },
     avatar: {
         margin: theme.spacing(1),
-        backgroundColor: theme.palette.secondary.main,
+        backgroundColor: theme.palette.secondary.dark,
     },
     form: {
         width: '100%',
@@ -104354,7 +104360,7 @@ var NavBar = function (_a) {
             react_1.default.createElement(core_1.Toolbar, null,
                 react_1.default.createElement(core_1.IconButton, { onClick: handleDrawer, edge: "start", className: classes.menuButton, color: "inherit", "aria-label": "open drawer" },
                     react_1.default.createElement(Menu_1.default, null)),
-                react_1.default.createElement(core_1.Typography, { className: classes.title, variant: "h6", noWrap: true }, "IATU"),
+                react_1.default.createElement(core_1.Typography, { className: classes.title, variant: "h6", noWrap: true }, "Jonquil"),
                 react_1.default.createElement("div", { className: classes.search },
                     react_1.default.createElement("div", { className: classes.searchIcon },
                         react_1.default.createElement(Search_1.default, null)),
@@ -104482,7 +104488,8 @@ var useStyles = styles_1.makeStyles(function (theme) {
             transition: theme.transitions.create(["margin", "width"], {
                 easing: theme.transitions.easing.sharp,
                 duration: theme.transitions.duration.leavingScreen
-            })
+            }),
+            background: '#a84466',
         },
         appBarShift: {
             width: "calc(100% - " + drawerWidth + "px)",
@@ -104493,7 +104500,8 @@ var useStyles = styles_1.makeStyles(function (theme) {
             })
         },
         menuButton: {
-            marginRight: theme.spacing(2)
+            marginRight: theme.spacing(2),
+            background: '#aa647b'
         },
         hide: {
             display: "none"
@@ -104725,27 +104733,9 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
 /***/ (function(module, exports, __webpack_require__) {
 
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/**
- * We'll load the axios HTTP library which allows us to easily issue requests
- * to our Laravel back-end. This library automatically handles sending the
- * CSRF token as a header based on the value of the "XSRF" token cookie.
- */
-
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-/**
- * Echo exposes an expressive API for subscribing to channels and listening
- * for events that are broadcast by Laravel. Echo and event broadcasting
- * allows your team to easily build robust real-time web applications.
- */
-// import Echo from 'laravel-echo';
-// window.Pusher = require('pusher-js');
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: process.env.MIX_PUSHER_APP_KEY,
-//     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
-//     forceTLS: true
-// });
+axios.defaults.withCredentials = true;
 
 /***/ }),
 

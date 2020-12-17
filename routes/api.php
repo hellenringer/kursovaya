@@ -1,22 +1,31 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 
+Route::get('/login', [AuthenticatedSessionController::class, 'create'])
+->middleware(['guest'])
+->name('login');
 
+$limiter = config('fortify.limiters.login'); 
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
+Route::post('/login', [AuthenticatedSessionController::class, 'store'])
+->middleware(array_filter([
+    'guest',
+    $limiter ? 'throttle:' . $limiter : null,
+])); 
 
-/*Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-*/
+Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
+->name('logout');
+
+Route::get('/register', [RegisteredUserController::class, 'create'])
+    ->middleware(['guest'])
+    ->name('register');
+
+Route::post('/register', [RegisteredUserController::class, 'store'])
+    ->middleware(['guest']);
+
+Route::middleware('auth:sanctum')->group(function () {
 Route::get('products', [ProductController::class, 'index']);
+}); 
+

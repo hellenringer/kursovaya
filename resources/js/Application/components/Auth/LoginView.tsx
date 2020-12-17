@@ -17,6 +17,9 @@ import { NavLink, Redirect, withRouter } from 'react-router-dom';
 import axios from 'axios';
 import Cookies from 'js-cookie';
 import ILoginViewProps from '../../Interfaces/ILoginViewProps';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+
 
 const LoginView: React.FC<ILoginViewProps> = ({ auth, setAuth, history }) => {
     const classes = useStyles();
@@ -52,7 +55,7 @@ const LoginView: React.FC<ILoginViewProps> = ({ auth, setAuth, history }) => {
                     <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                    Sign in
+                    Вход
                 </Typography>
                 <form className={classes.form} noValidate onSubmit={handleSubmit}>
                     <TextField
@@ -61,7 +64,7 @@ const LoginView: React.FC<ILoginViewProps> = ({ auth, setAuth, history }) => {
                         required
                         fullWidth
                         id="email"
-                        label="Email Address"
+                        label="Введите email"
                         name="email"
                         autoComplete="email"
                         autoFocus
@@ -74,7 +77,7 @@ const LoginView: React.FC<ILoginViewProps> = ({ auth, setAuth, history }) => {
                         required
                         fullWidth
                         name="password"
-                        label="Password"
+                        label="Введите пароль"
                         type="password"
                         id="password"
                         autoComplete="current-password"
@@ -82,27 +85,28 @@ const LoginView: React.FC<ILoginViewProps> = ({ auth, setAuth, history }) => {
                         onChange={(event: React.ChangeEvent<HTMLInputElement>) => setPassword(event.target.value)}
                     />
                     <FormControlLabel
-                        control={<Checkbox value="remember" color="primary" />}
-                        label="Remember me"
+                        control={<Checkbox value="remember" color="secondary" />}
+                        label="Запомнить меня"
                     />
                     <Button
                         type="submit"
                         fullWidth
-                        variant="contained"
-                        color="primary"
+                        variant="outlined"
+                        color="secondary"
                         className={classes.submit}
                     >
-                        Sign In
+                        Войти
                     </Button>
+            
                     <Grid container>
                         <Grid item xs>
                             <Link href="#" variant="body2">
-                                Forgot password?
+                                Забыли пароль?
                             </Link>
                         </Grid>
                         <Grid item>
                             <NavLink to="/register">
-                                {"Don't have an account? Sign Up"}
+                                {"Ещё нет аккаунта? Зарегистрироваться"}
                             </NavLink>
                         </Grid>
                     </Grid>

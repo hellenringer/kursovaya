@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
 import Index from "./components/Main/Index";
-import Navbar from "./components/Navbar/Navbar";
+import NavBar from "./components/Navbar/Navbar";
 import Routes from "./components/Routes";
 import Cookies from 'js-cookie';
-import ItemList from './components/Main/ItemsList'; 
-
 
 const App: React.FC = () => {
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = React.useState<boolean>(false);
     const [auth, setAuth] = React.useState<boolean>(false);
 
     useEffect(() => {
@@ -23,12 +21,13 @@ const App: React.FC = () => {
 
     return (
         <>
-             <Navbar open={open} setAuth={setAuth} handleDrawer={handleDrawer} />
+            <NavBar open={open} setAuth={setAuth} handleDrawer={handleDrawer} />
             <Index open={open}>
                 <Routes auth={auth} setAuth={setAuth} />
             </Index>
-       </>
+        </>
     );
 };
 
 export default App;
+

@@ -13,6 +13,8 @@ import Container from '@material-ui/core/Container';
 import Copyright from './includes/Copyright';
 import useStyles from './includes/styles';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
+import Cookies from 'js-cookie';
 
 export default function RegisterView() {
     const classes = useStyles();
@@ -25,7 +27,7 @@ export default function RegisterView() {
                     <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                Register
+                Регистрация
                 </Typography>
                 <form className={classes.form} noValidate>
                     <TextField
@@ -34,7 +36,7 @@ export default function RegisterView() {
                         required
                         fullWidth
                         id="email"
-                        label="Email Address"
+                        label="Введите email"
                         name="email"
                         autoComplete="email"
                         autoFocus
@@ -45,28 +47,28 @@ export default function RegisterView() {
                         required
                         fullWidth
                         name="password"
-                        label="Password"
+                        label="Придумайте пароль"
                         type="password"
                         id="password"
                         autoComplete="current-password"
                     />
                     <FormControlLabel
-                        control={<Checkbox value="remember" color="primary" />}
-                        label="Remember me"
+                        control={<Checkbox value="remember" color="secondary" />}
+                        label="Запомнить меня"
                     />
                     <Button
                         type="submit"
                         fullWidth
-                        variant="contained"
-                        color="primary"
+                        variant="outlined"
+                        color="secondary"
                         className={classes.submit}
                     >
-                        Register
+                        Зарегистрироваться
                     </Button>
                     <Grid container>
                         <Grid item>
                             <NavLink to="/login">
-                                {"Already have an account? Sign In"}
+                                {"Уже есть аккаунт? Войдите"}
                             </NavLink>
                         </Grid>
                     </Grid>

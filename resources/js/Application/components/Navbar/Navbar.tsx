@@ -75,7 +75,7 @@ const NavBar: React.FC<INavbarProps> = ({ open, handleDrawer, setAuth, history }
                         <MenuIcon />
                     </IconButton>
                     <Typography className={classes.title} variant="h6" noWrap>
-                        IATU
+                         Jonquil
                     </Typography>
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
