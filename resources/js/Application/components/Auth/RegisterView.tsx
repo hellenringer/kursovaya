@@ -12,12 +12,44 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Copyright from './includes/Copyright';
 import useStyles from './includes/styles';
-import { NavLink } from 'react-router-dom';
+import { NavLink,  Redirect, withRouter } from 'react-router-dom';
 import axios from 'axios';
 import Cookies from 'js-cookie';
+import IRegisterViewProps from '../../Interfaces/IRegisterViewProps';
 
 export default function RegisterView() {
+//const RegisterView: React.FC<IRegisterViewProps> = ({ auth, setAuth, history }) => {
     const classes = useStyles();
+   const [name, setName] = React.useState<string>('');
+  const [email, setEmail] = React.useState<string>('');
+const [password, setPassword] = React.useState<string>('');
+
+
+    function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+        event.preventDefault();
+   
+
+       axios.get('/sanctum/csrf-cookie').then(response => {
+          axios.post('/api/register', {
+                'name': name, 
+                'email': email,
+                'password': password,
+                'password_confirmation': password
+            }).then(function (response) {
+                logIn()
+            }).catch(function (error) {
+                console.log(error);
+            });
+        });
+    }
+
+    function logIn() {
+        console.log('авторизация')
+       // Cookies.set('user_logged_in', 'true', { expires: 86400, sameSite: 'lax' })
+        //setAuth(true);
+        //history.push('/')
+    }
+
 
     return (
         <Container component="main" maxWidth="xs">
@@ -29,7 +61,18 @@ export default function RegisterView() {
                 <Typography component="h1" variant="h5">
                 Регистрация
                 </Typography>
-                <form className={classes.form} noValidate>
+                <form className={classes.form} noValidate onSubmit={handleSubmit}>
+                <TextField
+                        variant="outlined"
+                        margin="normal"
+                        required
+                        fullWidth
+                        id="name"
+                        label="Введите имя"
+                        name="name"
+                        autoFocus
+                        onChange={(event: React.ChangeEvent<HTMLInputElement>) => setName(event.target.value)}
+                    />
                     <TextField
                         variant="outlined"
                         margin="normal"
@@ -39,7 +82,7 @@ export default function RegisterView() {
                         label="Введите email"
                         name="email"
                         autoComplete="email"
-                        autoFocus
+                        onChange={(event: React.ChangeEvent<HTMLInputElement>) => setEmail(event.target.value)}
                     />
                     <TextField
                         variant="outlined"
@@ -51,6 +94,7 @@ export default function RegisterView() {
                         type="password"
                         id="password"
                         autoComplete="current-password"
+                        onChange={(event: React.ChangeEvent<HTMLInputElement>) => setPassword(event.target.value)}
                     />
                     <FormControlLabel
                         control={<Checkbox value="remember" color="secondary" />}
@@ -80,3 +124,6 @@ export default function RegisterView() {
         </Container>
     );
 }
+
+
+//export default withRouter(RegisterView);

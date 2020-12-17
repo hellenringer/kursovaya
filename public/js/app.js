@@ -103943,17 +103943,44 @@ var Container_1 = __importDefault(__webpack_require__(/*! @material-ui/core/Cont
 var Copyright_1 = __importDefault(__webpack_require__(/*! ./includes/Copyright */ "./resources/js/Application/components/Auth/includes/Copyright.tsx"));
 var styles_1 = __importDefault(__webpack_require__(/*! ./includes/styles */ "./resources/js/Application/components/Auth/includes/styles.tsx"));
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
 function RegisterView() {
+    //const RegisterView: React.FC<IRegisterViewProps> = ({ auth, setAuth, history }) => {
     var classes = styles_1.default();
+    var _a = react_1.default.useState(''), name = _a[0], setName = _a[1];
+    var _b = react_1.default.useState(''), email = _b[0], setEmail = _b[1];
+    var _c = react_1.default.useState(''), password = _c[0], setPassword = _c[1];
+    function handleSubmit(event) {
+        event.preventDefault();
+        axios_1.default.get('/sanctum/csrf-cookie').then(function (response) {
+            axios_1.default.post('/api/register', {
+                'name': name,
+                'email': email,
+                'password': password,
+                'password_confirmation': password
+            }).then(function (response) {
+                logIn();
+            }).catch(function (error) {
+                console.log(error);
+            });
+        });
+    }
+    function logIn() {
+        console.log('авторизация');
+        // Cookies.set('user_logged_in', 'true', { expires: 86400, sameSite: 'lax' })
+        //setAuth(true);
+        //history.push('/')
+    }
     return (react_1.default.createElement(Container_1.default, { component: "main", maxWidth: "xs" },
         react_1.default.createElement(CssBaseline_1.default, null),
         react_1.default.createElement("div", { className: classes.paper },
             react_1.default.createElement(Avatar_1.default, { className: classes.avatar },
                 react_1.default.createElement(LockOutlined_1.default, null)),
             react_1.default.createElement(Typography_1.default, { component: "h1", variant: "h5" }, "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044F"),
-            react_1.default.createElement("form", { className: classes.form, noValidate: true },
-                react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, id: "email", label: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 email", name: "email", autoComplete: "email", autoFocus: true }),
-                react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, name: "password", label: "\u041F\u0440\u0438\u0434\u0443\u043C\u0430\u0439\u0442\u0435 \u043F\u0430\u0440\u043E\u043B\u044C", type: "password", id: "password", autoComplete: "current-password" }),
+            react_1.default.createElement("form", { className: classes.form, noValidate: true, onSubmit: handleSubmit },
+                react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, id: "name", label: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043C\u044F", name: "name", autoFocus: true, onChange: function (event) { return setName(event.target.value); } }),
+                react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, id: "email", label: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 email", name: "email", autoComplete: "email", onChange: function (event) { return setEmail(event.target.value); } }),
+                react_1.default.createElement(TextField_1.default, { variant: "outlined", margin: "normal", required: true, fullWidth: true, name: "password", label: "\u041F\u0440\u0438\u0434\u0443\u043C\u0430\u0439\u0442\u0435 \u043F\u0430\u0440\u043E\u043B\u044C", type: "password", id: "password", autoComplete: "current-password", onChange: function (event) { return setPassword(event.target.value); } }),
                 react_1.default.createElement(FormControlLabel_1.default, { control: react_1.default.createElement(Checkbox_1.default, { value: "remember", color: "secondary" }), label: "\u0417\u0430\u043F\u043E\u043C\u043D\u0438\u0442\u044C \u043C\u0435\u043D\u044F" }),
                 react_1.default.createElement(Button_1.default, { type: "submit", fullWidth: true, variant: "outlined", color: "secondary", className: classes.submit }, "\u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F"),
                 react_1.default.createElement(Grid_1.default, { container: true },
@@ -103963,6 +103990,7 @@ function RegisterView() {
             react_1.default.createElement(Copyright_1.default, null))));
 }
 exports.default = RegisterView;
+//export default withRouter(RegisterView);
 
 
 /***/ }),
@@ -104008,12 +104036,6 @@ exports.default = Copyright;
 Object.defineProperty(exports, "__esModule", { value: true });
 var styles_1 = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 var useStyles = styles_1.makeStyles(function (theme) { return ({
-    image: {
-        backgroundImage: 'url(https://source.unsplash.com/random)',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-    },
     paper: {
         marginTop: theme.spacing(8),
         display: 'flex',
@@ -104318,6 +104340,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 var clsx_1 = __importDefault(__webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js"));
 var js_cookie_1 = __importDefault(__webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js"));
+var axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
 var Menu_1 = __importDefault(__webpack_require__(/*! @material-ui/icons/Menu */ "./node_modules/@material-ui/icons/Menu.js"));
 var Mail_1 = __importDefault(__webpack_require__(/*! @material-ui/icons/Mail */ "./node_modules/@material-ui/icons/Mail.js"));
 var Search_1 = __importDefault(__webpack_require__(/*! @material-ui/icons/Search */ "./node_modules/@material-ui/icons/Search.js"));
@@ -104345,10 +104368,16 @@ var NavBar = function (_a) {
         setAnchorEl(null);
     };
     var handleLogOut = function () {
-        js_cookie_1.default.remove('user_logged_in');
-        setAnchorEl(null);
-        setAuth(false);
-        history.push('/login');
+        axios_1.default.get('/sanctum/csrf-cookie').then(function (response) {
+            axios_1.default.post('/api/logout').then(function (response) {
+                js_cookie_1.default.remove('user_logged_in');
+                setAnchorEl(null);
+                setAuth(false);
+                history.push('/login');
+            }).catch(function (error) {
+                console.log(error);
+            });
+        });
     };
     var menuId = 'primary-search-account-menu';
     var renderMenu = (react_1.default.createElement(core_1.Menu, { anchorEl: anchorEl, anchorOrigin: { vertical: 'top', horizontal: 'right' }, id: menuId, keepMounted: true, transformOrigin: { vertical: 'top', horizontal: 'right' }, open: isMenuOpen, onClose: handleMenuClose },

@@ -17,9 +17,6 @@ import { NavLink, Redirect, withRouter } from 'react-router-dom';
 import axios from 'axios';
 import Cookies from 'js-cookie';
 import ILoginViewProps from '../../Interfaces/ILoginViewProps';
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-
-
 
 const LoginView: React.FC<ILoginViewProps> = ({ auth, setAuth, history }) => {
     const classes = useStyles();

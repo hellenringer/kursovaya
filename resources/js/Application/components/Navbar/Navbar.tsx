@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import Cookies from 'js-cookie';
-
+import axios from 'axios';
 import MenuIcon from '@material-ui/icons/Menu';
 import MailIcon from '@material-ui/icons/Mail';
 import SearchIcon from '@material-ui/icons/Search';
@@ -35,10 +35,16 @@ const NavBar: React.FC<INavbarProps> = ({ open, handleDrawer, setAuth, history }
     };
 
     const handleLogOut = () => {
-        Cookies.remove('user_logged_in')
+        axios.get('/sanctum/csrf-cookie').then(response => {
+            axios.post('/api/logout').then(function (response) {
+         Cookies.remove('user_logged_in')
         setAnchorEl(null);
         setAuth(false);
         history.push('/login');
+            }).catch(function (error) {
+                console.log(error);
+            });
+        });
     }
 
     const menuId = 'primary-search-account-menu';
