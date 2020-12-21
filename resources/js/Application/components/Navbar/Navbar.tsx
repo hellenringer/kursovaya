@@ -9,16 +9,15 @@ import InboxIcon from "@material-ui/icons/MoveToInbox";
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import NotificationsIcon from '@material-ui/icons/Notifications';
-
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import { AppBar, Badge, Box, Divider, Drawer, IconButton, InputBase, List, ListItem, ListItemIcon, ListItemText, Menu, MenuItem, Toolbar, Typography } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
-import { AppBar, Badge, Divider, Drawer, IconButton, InputBase, List, ListItem, ListItemIcon, ListItemText, Menu, MenuItem, Toolbar, Typography } from '@material-ui/core';
-
 import useStyles from './includes/style';
-import { NavLink, withRouter } from 'react-router-dom';
+import { Link, NavLink, withRouter } from 'react-router-dom';
 import INavbarProps from '../../Interfaces/INavbarProps';
+import CreditCardIcon from '@material-ui/icons/CreditCard';
 
-const NavBar: React.FC<INavbarProps> = ({ open, handleDrawer, setAuth, history }) => {
+const NavBar: React.FC<INavbarProps> = ({ open, handleDrawer, setAuth, history, userMoney }) => {
     const classes = useStyles();
     const theme = useTheme();
     //меню при клике на аватарку
@@ -98,16 +97,27 @@ const NavBar: React.FC<INavbarProps> = ({ open, handleDrawer, setAuth, history }
                     </div>
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
-                        <IconButton aria-label="show 4 new mails" color="inherit">
-                            <Badge badgeContent={4} color="secondary">
-                                <MailIcon />
-                            </Badge>
-                        </IconButton>
-                        <IconButton aria-label="show 17 new notifications" color="inherit">
-                            <Badge badgeContent={17} color="secondary">
-                                <NotificationsIcon />
-                            </Badge>
-                        </IconButton>
+                  
+                        <IconButton 
+                        aria-label="show 17 new notifications" 
+                        color="inherit">
+                                    
+                                    <CreditCardIcon color="action"/> 
+                                   {userMoney}
+
+                            </IconButton> 
+                            <Link to="/payment">
+                            <IconButton 
+                            edge="end"
+                            aria-label="show 17 new notifications" 
+                            color="secondary">
+                                <Badge badgeContent={0} color="secondary">
+                                    
+                                    <ShoppingCartIcon color="action"/>
+                               
+                                </Badge>
+                            </IconButton>
+                        </Link>
                         <IconButton
                             edge="end"
                             aria-label="account of current user"
@@ -115,7 +125,7 @@ const NavBar: React.FC<INavbarProps> = ({ open, handleDrawer, setAuth, history }
                             onClick={handleProfileMenuOpen}
                             color="inherit"
                         >
-                            <AccountCircle />
+                            <AccountCircle color="action" />
                         </IconButton>
                     </div>
                 </Toolbar>

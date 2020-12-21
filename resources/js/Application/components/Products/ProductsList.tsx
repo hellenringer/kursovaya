@@ -8,6 +8,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableContainer from '@material-ui/core/TableContainer';
 import IProductsListProps from '../../Interfaces/IProductsListProps';
+import { Button } from '@material-ui/core';
 
 const ProductsList: React.FC<IProductsListProps> = (props) => {
     const classes = useStyles();
@@ -16,21 +17,23 @@ const ProductsList: React.FC<IProductsListProps> = (props) => {
             <Table className={classes.table} aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell>id</TableCell>
-                        <TableCell align="right">Title</TableCell>
+                        <TableCell>Title</TableCell>
                         <TableCell align="right">Price</TableCell>
                         <TableCell align="right">Category</TableCell>
+                        <TableCell align="center">Actions</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {props.products!.map((product) => (
                         <TableRow key={product.id}>
-                            <TableCell component="th" scope="row">
-                                {product.id}
-                            </TableCell>
-                            <TableCell align="right">{product.title}</TableCell>
+                            <TableCell>{product.title}</TableCell>
                             <TableCell align="right">{product.price}</TableCell>
                             <TableCell align="right">{product.category.title}</TableCell>
+                            <TableCell align="center">
+                                <Button onClick={() => props.setProductsInCart([product.id, product.title, product.price])} variant="contained" color="secondary">
+                                    Добавить в корзину
+                                </Button>
+                            </TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

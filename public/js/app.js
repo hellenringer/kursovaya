@@ -37887,6 +37887,37 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/icons/CreditCard.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@material-ui/icons/CreditCard.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var React = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("path", {
+  d: "M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"
+}), 'CreditCard');
+
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/icons/Favorite.js":
 /*!*****************************************************!*\
   !*** ./node_modules/@material-ui/icons/Favorite.js ***!
@@ -38073,37 +38104,6 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ "./node_modules/@material-ui/icons/Notifications.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/@material-ui/icons/Notifications.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var React = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
-
-var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("path", {
-  d: "M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
-}), 'Notifications');
-
-exports.default = _default;
-
-/***/ }),
-
 /***/ "./node_modules/@material-ui/icons/PersonPin.js":
 /*!******************************************************!*\
   !*** ./node_modules/@material-ui/icons/PersonPin.js ***!
@@ -38223,6 +38223,37 @@ var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/crea
 var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("path", {
   d: "M17.21 9l-4.38-6.56c-.19-.28-.51-.42-.83-.42-.32 0-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1h-4.79zM9 9l3-4.4L15 9H9zm3 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
 }), 'ShoppingBasket');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/ShoppingCart.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@material-ui/icons/ShoppingCart.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var React = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("path", {
+  d: "M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+}), 'ShoppingCart');
 
 exports.default = _default;
 
@@ -103803,6 +103834,49 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -103812,12 +103886,41 @@ var Index_1 = __importDefault(__webpack_require__(/*! ./components/Main/Index */
 var Navbar_1 = __importDefault(__webpack_require__(/*! ./components/Navbar/Navbar */ "./resources/js/Application/components/Navbar/Navbar.tsx"));
 var Routes_1 = __importDefault(__webpack_require__(/*! ./components/Routes */ "./resources/js/Application/components/Routes.tsx"));
 var js_cookie_1 = __importDefault(__webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js"));
+var axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
 var App = function () {
     var _a = react_1.default.useState(false), open = _a[0], setOpen = _a[1];
     var _b = react_1.default.useState(false), auth = _b[0], setAuth = _b[1];
+    var _c = react_1.default.useState([]), productsInCart = _c[0], setProductsInCart = _c[1];
+    var _d = react_1.default.useState(0), userMoney = _d[0], setUserMoney = _d[1];
+    function setProductsInLocalStorage(values) {
+        var product = {
+            id: values[0],
+            title: values[1],
+            price: values[2]
+        };
+        setProductsInCart(function (prev) {
+            localStorage.setItem('products_in_cart', JSON.stringify(__spreadArrays([product], prev)));
+            return __spreadArrays([product], prev);
+        });
+    }
     react_1.useEffect(function () {
         if (js_cookie_1.default.get('user_logged_in') == 'true') {
             setAuth(true);
+            var fetchData = function () { return __awaiter(void 0, void 0, void 0, function () {
+                var result;
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0: return [4 /*yield*/, axios_1.default.get('/api/me')];
+                        case 1:
+                            result = _a.sent();
+                            setUserMoney(result.data.money);
+                            return [2 /*return*/];
+                    }
+                });
+            }); };
+            fetchData();
+            var saved = JSON.parse(localStorage.getItem('products_in_cart') || '[]');
+            setProductsInCart(saved);
         }
         ;
     }, []);
@@ -103826,9 +103929,12 @@ var App = function () {
         setOpen(status);
     };
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement(Navbar_1.default, { open: open, setAuth: setAuth, handleDrawer: handleDrawer }),
+        "  ",
+        auth
+            ? react_1.default.createElement(Navbar_1.default, { open: open, setAuth: setAuth, handleDrawer: handleDrawer, userMoney: userMoney })
+            : null,
         react_1.default.createElement(Index_1.default, { open: open },
-            react_1.default.createElement(Routes_1.default, { auth: auth, setAuth: setAuth }))));
+            react_1.default.createElement(Routes_1.default, { auth: auth, setAuth: setAuth, setProductsInCart: setProductsInLocalStorage }))));
 };
 exports.default = App;
 
@@ -104348,14 +104454,15 @@ var MoveToInbox_1 = __importDefault(__webpack_require__(/*! @material-ui/icons/M
 var AccountCircle_1 = __importDefault(__webpack_require__(/*! @material-ui/icons/AccountCircle */ "./node_modules/@material-ui/icons/AccountCircle.js"));
 var ChevronLeft_1 = __importDefault(__webpack_require__(/*! @material-ui/icons/ChevronLeft */ "./node_modules/@material-ui/icons/ChevronLeft.js"));
 var ChevronRight_1 = __importDefault(__webpack_require__(/*! @material-ui/icons/ChevronRight */ "./node_modules/@material-ui/icons/ChevronRight.js"));
-var Notifications_1 = __importDefault(__webpack_require__(/*! @material-ui/icons/Notifications */ "./node_modules/@material-ui/icons/Notifications.js"));
-var styles_1 = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+var ShoppingCart_1 = __importDefault(__webpack_require__(/*! @material-ui/icons/ShoppingCart */ "./node_modules/@material-ui/icons/ShoppingCart.js"));
 var core_1 = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+var styles_1 = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 var style_1 = __importDefault(__webpack_require__(/*! ./includes/style */ "./resources/js/Application/components/Navbar/includes/style.tsx"));
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var CreditCard_1 = __importDefault(__webpack_require__(/*! @material-ui/icons/CreditCard */ "./node_modules/@material-ui/icons/CreditCard.js"));
 var NavBar = function (_a) {
     var _b;
-    var open = _a.open, handleDrawer = _a.handleDrawer, setAuth = _a.setAuth, history = _a.history;
+    var open = _a.open, handleDrawer = _a.handleDrawer, setAuth = _a.setAuth, history = _a.history, userMoney = _a.userMoney;
     var classes = style_1.default();
     var theme = styles_1.useTheme();
     //меню при клике на аватарку
@@ -104399,14 +104506,15 @@ var NavBar = function (_a) {
                         }, inputProps: { 'aria-label': 'search' } })),
                 react_1.default.createElement("div", { className: classes.grow }),
                 react_1.default.createElement("div", { className: classes.sectionDesktop },
-                    react_1.default.createElement(core_1.IconButton, { "aria-label": "show 4 new mails", color: "inherit" },
-                        react_1.default.createElement(core_1.Badge, { badgeContent: 4, color: "secondary" },
-                            react_1.default.createElement(Mail_1.default, null))),
                     react_1.default.createElement(core_1.IconButton, { "aria-label": "show 17 new notifications", color: "inherit" },
-                        react_1.default.createElement(core_1.Badge, { badgeContent: 17, color: "secondary" },
-                            react_1.default.createElement(Notifications_1.default, null))),
+                        react_1.default.createElement(CreditCard_1.default, { color: "action" }),
+                        userMoney),
+                    react_1.default.createElement(react_router_dom_1.Link, { to: "/payment" },
+                        react_1.default.createElement(core_1.IconButton, { edge: "end", "aria-label": "show 17 new notifications", color: "secondary" },
+                            react_1.default.createElement(core_1.Badge, { badgeContent: 0, color: "secondary" },
+                                react_1.default.createElement(ShoppingCart_1.default, { color: "action" })))),
                     react_1.default.createElement(core_1.IconButton, { edge: "end", "aria-label": "account of current user", "aria-haspopup": "true", onClick: handleProfileMenuOpen, color: "inherit" },
-                        react_1.default.createElement(AccountCircle_1.default, null))))),
+                        react_1.default.createElement(AccountCircle_1.default, { color: "action" }))))),
         react_1.default.createElement(core_1.Drawer, { className: classes.drawer, variant: "persistent", anchor: "left", open: open, classes: {
                 paper: classes.drawerPaper
             } },
@@ -104566,6 +104674,53 @@ exports.default = useStyles;
 
 /***/ }),
 
+/***/ "./resources/js/Application/components/Payment/PaymentIndex.tsx":
+/*!**********************************************************************!*\
+  !*** ./resources/js/Application/components/Payment/PaymentIndex.tsx ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+var axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var Payment = function () {
+    var products_in_cart = JSON.parse(localStorage.getItem('products_in_cart') || '[]');
+    var history = react_router_dom_1.useHistory();
+    function checkoutOrder() {
+        axios_1.default.post('/api/checkout', {
+            'products_in_cart': products_in_cart
+        })
+            .then(function (response) {
+            localStorage.removeItem('products_in_cart');
+            alert(response.data);
+            history.push('/');
+        })
+            .catch(function (error) {
+            alert(error.response.data);
+        });
+    }
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement("div", null,
+            react_1.default.createElement("div", null, "\u043F\u0440\u0438\u0432\u0435\u0442! \u044D\u0442\u043E \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u043E\u043F\u043B\u0430\u0442\u044B"),
+            react_1.default.createElement("div", null, "\u0423 \u0432\u0430\u0441 \u0432 \u043A\u043E\u0440\u0437\u0438\u043D\u0435: "),
+            react_1.default.createElement("ul", null, products_in_cart.map(function (product) {
+                return react_1.default.createElement("li", null, product.title);
+            }))),
+        react_1.default.createElement(core_1.Button, { onClick: function () { return checkoutOrder(); }, color: "primary" }, "\u041E\u0444\u043E\u0440\u043C\u0438\u0442\u044C")));
+};
+exports.default = Payment;
+
+
+/***/ }),
+
 /***/ "./resources/js/Application/components/Products/ProductsList.tsx":
 /*!***********************************************************************!*\
   !*** ./resources/js/Application/components/Products/ProductsList.tsx ***!
@@ -104588,21 +104743,23 @@ var TableBody_1 = __importDefault(__webpack_require__(/*! @material-ui/core/Tabl
 var TableCell_1 = __importDefault(__webpack_require__(/*! @material-ui/core/TableCell */ "./node_modules/@material-ui/core/esm/TableCell/index.js"));
 var TableHead_1 = __importDefault(__webpack_require__(/*! @material-ui/core/TableHead */ "./node_modules/@material-ui/core/esm/TableHead/index.js"));
 var TableContainer_1 = __importDefault(__webpack_require__(/*! @material-ui/core/TableContainer */ "./node_modules/@material-ui/core/esm/TableContainer/index.js"));
+var core_1 = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 var ProductsList = function (props) {
     var classes = style_1.default();
     return (react_1.default.createElement(TableContainer_1.default, { component: Paper_1.default },
         react_1.default.createElement(Table_1.default, { className: classes.table, "aria-label": "simple table" },
             react_1.default.createElement(TableHead_1.default, null,
                 react_1.default.createElement(TableRow_1.default, null,
-                    react_1.default.createElement(TableCell_1.default, null, "id"),
-                    react_1.default.createElement(TableCell_1.default, { align: "right" }, "Title"),
+                    react_1.default.createElement(TableCell_1.default, null, "Title"),
                     react_1.default.createElement(TableCell_1.default, { align: "right" }, "Price"),
-                    react_1.default.createElement(TableCell_1.default, { align: "right" }, "Category"))),
+                    react_1.default.createElement(TableCell_1.default, { align: "right" }, "Category"),
+                    react_1.default.createElement(TableCell_1.default, { align: "center" }, "Actions"))),
             react_1.default.createElement(TableBody_1.default, null, props.products.map(function (product) { return (react_1.default.createElement(TableRow_1.default, { key: product.id },
-                react_1.default.createElement(TableCell_1.default, { component: "th", scope: "row" }, product.id),
-                react_1.default.createElement(TableCell_1.default, { align: "right" }, product.title),
+                react_1.default.createElement(TableCell_1.default, null, product.title),
                 react_1.default.createElement(TableCell_1.default, { align: "right" }, product.price),
-                react_1.default.createElement(TableCell_1.default, { align: "right" }, product.category.title))); })))));
+                react_1.default.createElement(TableCell_1.default, { align: "right" }, product.category.title),
+                react_1.default.createElement(TableCell_1.default, { align: "center" },
+                    react_1.default.createElement(core_1.Button, { onClick: function () { return props.setProductsInCart([product.id, product.title, product.price]); }, variant: "contained", color: "secondary" }, "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0432 \u043A\u043E\u0440\u0437\u0438\u043D\u0443")))); })))));
 };
 exports.default = ProductsList;
 
@@ -104643,15 +104800,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 var ProductsList_1 = __importDefault(__webpack_require__(/*! ./ProductsList */ "./resources/js/Application/components/Products/ProductsList.tsx"));
-var ProductsPage = function () {
-    var _a = react_1.useState([]), products = _a[0], setProducts = _a[1];
+var ProductsPage = function (_a) {
+    var setProductsInCart = _a.setProductsInCart;
+    var _b = react_1.useState([]), products = _b[0], setProducts = _b[1];
     react_1.useEffect(function () {
         fetch("http://127.0.0.1:8000" + '/api/products')
             .then(function (response) { return response.json(); })
             .then(function (data) { return setProducts(data.data); });
     }, []);
     return (products
-        ? react_1.default.createElement(ProductsList_1.default, { products: products })
+        ? react_1.default.createElement(ProductsList_1.default, { products: products, setProductsInCart: setProductsInCart })
         : react_1.default.createElement("span", null, "\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0430"));
 };
 exports.default = ProductsPage;
@@ -104709,9 +104867,10 @@ var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_mod
 var LoginView_1 = __importDefault(__webpack_require__(/*! ./Auth/LoginView */ "./resources/js/Application/components/Auth/LoginView.tsx"));
 var RegisterView_1 = __importDefault(__webpack_require__(/*! ./Auth/RegisterView */ "./resources/js/Application/components/Auth/RegisterView.tsx"));
 var ItemsList_1 = __importDefault(__webpack_require__(/*! ./Main/ItemsList */ "./resources/js/Application/components/Main/ItemsList.tsx"));
+var PaymentIndex_1 = __importDefault(__webpack_require__(/*! ./Payment/PaymentIndex */ "./resources/js/Application/components/Payment/PaymentIndex.tsx"));
 var ProductsPage_1 = __importDefault(__webpack_require__(/*! ./Products/ProductsPage */ "./resources/js/Application/components/Products/ProductsPage.tsx"));
 var Routes = function (_a) {
-    var auth = _a.auth, setAuth = _a.setAuth;
+    var auth = _a.auth, setAuth = _a.setAuth, setProductsInCart = _a.setProductsInCart;
     return (react_1.default.createElement(react_router_dom_1.Switch, null,
         react_1.default.createElement(react_router_dom_1.Route, { path: "/login", component: function (props) {
                 return react_1.default.createElement(LoginView_1.default, __assign({ auth: auth, setAuth: setAuth }, props));
@@ -104720,7 +104879,10 @@ var Routes = function (_a) {
         auth
             ? react_1.default.createElement(react_1.default.Fragment, null,
                 react_1.default.createElement(react_router_dom_1.Route, { component: ItemsList_1.default, path: "/", exact: true }),
-                react_1.default.createElement(react_router_dom_1.Route, { component: ProductsPage_1.default, path: "/products" }))
+                react_1.default.createElement(react_router_dom_1.Route, { component: PaymentIndex_1.default, path: "/payment", exact: true }),
+                react_1.default.createElement(react_router_dom_1.Route, { path: "/products", component: function (props) {
+                        return react_1.default.createElement(ProductsPage_1.default, __assign({ setProductsInCart: setProductsInCart }, props));
+                    } }))
             : react_1.default.createElement(react_router_dom_1.Redirect, { to: '/login' })));
 };
 exports.default = Routes;
